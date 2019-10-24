@@ -1,0 +1,9 @@
+导入flask_admin
+pip install flask_admin
+
+pip install sqlalchemy
+从表生成model
+pip install flask-sqlacodegen
+flask-sqlacodegen "mysql+pymysql://root:root@127.0.0.1:3306/oauth2?charset=utf8" --tables sys_user,sys_role --outfile "test.py"  --flask
+整合安全框架
+pip install Flask-Security
